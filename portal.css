@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Inclusive+Sans&display=swap');
+
+/* Links in header */
+a {
+    background-color: lightblue;
+    color: rgb(47, 44, 58);
+    text-decoration: none;
+    padding: 2%;
+    /* margin: 0.5%; */
+    text-align: center;
+    width: 100%;
+}
+
+body {
+    background-color: lightblue;
+    font-family: "Inclusive Sans", Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+#content {
+    background-color: white;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* * {  
+    border: 1px solid red;
+} */
+
+footer p {
+    background-color: lightblue;
+    font-size: 1.5em;
+    text-align: center;
+    width: 100%;
+}
+
+p {
+   padding: 1%;
+   margin: 1% auto; 
+   width: 50%;
+   box-sizing: border-box;
+}
+
+/* Changes font size of header */
+h1 {
+    font-size: 2em;
+    text-align: center;
+    margin: 2%;
+}
+
+/* Changes picture size */
+img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    border: 3px solid lightblue;
+    padding: 2%;
+    box-sizing: border-box;
+}
+
+/* On hover changes color of links */
+a:hover {
+    background-color: rgb(149, 149, 197);
+    color: white;
+}
+
+/* Prevents overlap and centers */
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 0%;
+}
+
+/* Changes background color of class names */
+.background {
+    background-color: lightblue;
+}
+
+/* Changes color of ID names */
+#primary {
+    background-color: white;
+}
