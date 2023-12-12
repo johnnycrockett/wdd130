@@ -6,6 +6,7 @@
     <title>Aritisry | Commissions</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="images/Logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
       .parallax {
         /* The image used */
@@ -40,29 +41,64 @@
     </header>
 <main><!-- Container element -->
 
-    <div id="welcomebox">
+  <div class="topnav">
+    <a href="#home" class="active">Aritisry</a>
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks">
+      <a href="index.html">Home</a>
+      <a href="commissions.html">Commissions</a>
+      <a href="aboutme.html">About Me</a>
+  </nav> 
+    </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+    <div id="artbiobox">
         <div id="welcometitlebox">
             <h1 id="welcometitle">Artist Biography</h1>
         </div>
-        <div id="welcometextbox">
-            <p id="welcometext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dictum varius duis at consectetur lorem donec massa. Sodales ut eu sem integer. Pulvinar elementum integer enim neque. Semper risus in hendrerit gravida rutrum. Euismod elementum nisi quis eleifend. Risus at ultrices mi tempus imperdiet nulla malesuada pellentesque. Justo laoreet sit amet cursus sit amet. Sem fringilla ut morbi tincidunt augue. Tortor id aliquet lectus proin nibh nisl condimentum id venenatis. Sit amet mattis vulputate enim nulla. Id velit ut tortor pretium viverra suspendisse potenti. Morbi enim nunc faucibus a. Amet risus nullam eget felis eget nunc. Viverra suspendisse potenti nullam ac tortor vitae purus. Massa placerat duis ultricies lacus sed turpis tincidunt id aliquet.</p>
+        <div id="biotextbox">
+            <p id="welcometext">My name is Arianna. But I’ll always go by Ari. I am a self taught artist. I first started drawing when I was old enough to hold a pencil. From drawing on the sides on my homework, to sketching coloring pages for friends. At the age of 12 was when I really wanted to take art more seriously. My love for characters in stories and games made me want to become apart of their world, and art gave me the ability to transport myself into these fictional universes. Some of my favorites being being the open-world action RPG, Genshin Impact and the Japanese animated series, Jojo's Bizarre Adventure. As well as some self created worlds from my imagination. 
+
+              The whole idea behind creating my art is that I remain faithful to my own self. 
+              
+              Using my imagination, I’ll depict how I would truly fit into the lives of these characters in these stories. If I develops a connection to a character, then I’ll draw up a story for herself and that character. I take pride in creating art from the heart. The ability to bring my fantasies to life on my digital canvas is the greatest gift ever! 
+              
+              If my artwork can bring joy and laughter to those who see it, I know I’ve done a good job. 
+              
+              </p>
         </div>
   </div>
   <div id="csl">
     <div id="slimagebox">
-        <img id="slimage" src="images/Biography.jpg" alt="commissions spotlight">
+        <img id="bioimage" src="images/Biography.jpg" alt="commissions spotlight">
     </div>
   <div id="welcomebox">
     <div id="welcometitlebox">
         <h1 id="welcometitle">Artistic Philosophy and Process</h1>
     </div>
-    <div id="welcometextbox">
-        <p id="welcometext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dictum varius duis at consectetur lorem donec massa. Sodales ut eu sem integer. Pulvinar elementum integer enim neque. Semper risus in hendrerit gravida rutrum. Euismod elementum nisi quis eleifend. Risus at ultrices mi tempus imperdiet nulla malesuada pellentesque. Justo laoreet sit amet cursus sit amet. Sem fringilla ut morbi tincidunt augue. Tortor id aliquet lectus proin nibh nisl condimentum id venenatis. Sit amet mattis vulputate enim nulla. Id velit ut tortor pretium viverra suspendisse potenti. Morbi enim nunc faucibus a. Amet risus nullam eget felis eget nunc. Viverra suspendisse potenti nullam ac tortor vitae purus. Massa placerat duis ultricies lacus sed turpis tincidunt id aliquet.</p>
+    <div id="philtextbox">
+        <p id="welcometext">The goal of my artwork it to submerge myself and others into their favorite fictional worlds. Helping them visually picture themselves with their favorite characters. In this life, we’ll never be able to truly have a connection with them. We’re real and they’re not. But, if I can help them see that through drawings, then I will. Escaping reality is what we want to achieve. 
+
+
+
+          I’ll portray any message I need to. I’ll usually want to go for a happy and magical message. To give my friends a happy created picture to enjoy. Whatever story they want, I’ll give them. Art provokes all emotions, and they’re all beautiful. So I’ll give them all the love, heartache, and destruction they want to see! 
+          
+          
+          
+          I start off by thinking about the person I am drawing and/or the character the want to be drawn with. If they would like a drawing together, I consider their compatiblity and what their desired relationship be with the character. I always want to understand the person I’m drawing, so getting to know them a bit beforehand helps a lot! With that,  I’ll draw up their story, keeping it as natural and realistic as possible.  My intuition guides my story writing process and make this fiction a digital reality. 
+          
+          
+          
+          When inspiration strikes, I’ll usually always jot down the details immediately. I’ll drop whatever I’m doing currently so I won’t forget the idea. Sure, this can get me into some trouble with other daily responsibilities, but I believe that art is so valuable and beautiful. It should always deserve all the time in the world! The drawing idea will almost always be sketched out into my brain, and that’s when I strike. </p>
     </div>
   </div>
   <div id="csl">
     <div id="slimagebox">
-        <img id="slimage" src="images/AkeAri.jpg" alt="commissions spotlight">
+        <img id="philimage" src="images/AkeAri.jpg" alt="commissions spotlight">
     </div>
 
     <div class="container">
@@ -105,33 +141,44 @@
 </footer>
 </body>
 <script>
-    let slideIndex = 1;
+  let slideIndex = 1;
 showSlides(slideIndex);
 
 // Next/previous controls
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+showSlides(slideIndex += n);
 }
 
 // Thumbnail image controls
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+let i;
+let slides = document.getElementsByClassName("mySlides");
+let dots = document.getElementsByClassName("dot");
+if (n > slides.length) {slideIndex = 1}
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+  slides[i].style.display = "none";
 }
+for (i = 0; i < dots.length; i++) {
+  dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
+}
+
+/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function myFunction() {
+var x = document.getElementById("myLinks");
+if (x.style.display === "block") {
+  x.style.display = "none";
+} else {
+  x.style.display = "block";
+}
+}
+
 </script>
 </html> 

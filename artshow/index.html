@@ -6,6 +6,7 @@
     <title>Aritisry | Home</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="images/Logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
       .parallax {
         /* The image used */
@@ -35,25 +36,41 @@
             <a href="index.html">Home</a>
             <a href="commissions.html">Commissions</a>
             <a href="aboutme.html">About Me</a>
-        </nav>
-
+        </nav> 
     </header>
 <main><!-- Container element -->
+  <!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="#home" class="active">Aritisry</a>
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+    <a href="index.html">Home</a>
+    <a href="commissions.html">Commissions</a>
+    <a href="aboutme.html">About Me</a>
+</nav> 
+  </div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
     <div id="newsbox">
         <h1 id="newstitle">Latest Updates and News</h1>
         <p id="newstext">Lorem ipsum</p>
     </div>
 
     <div id="welcomebox">
+      <div id="backgroundcolor">
         <div id="welcometitlebox">
             <h1 id="welcometitle">Welcome!</h1>
         </div>
         <div id="welcometextbox">
             <p id="welcometext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dictum varius duis at consectetur lorem donec massa. Sodales ut eu sem integer. Pulvinar elementum integer enim neque. Semper risus in hendrerit gravida rutrum. Euismod elementum nisi quis eleifend. Risus at ultrices mi tempus imperdiet nulla malesuada pellentesque. Justo laoreet sit amet cursus sit amet. Sem fringilla ut morbi tincidunt augue. Tortor id aliquet lectus proin nibh nisl condimentum id venenatis. Sit amet mattis vulputate enim nulla. Id velit ut tortor pretium viverra suspendisse potenti. Morbi enim nunc faucibus a. Amet risus nullam eget felis eget nunc. Viverra suspendisse potenti nullam ac tortor vitae purus. Massa placerat duis ultricies lacus sed turpis tincidunt id aliquet.</p>
         </div>
+      </div>
     </div>
 
-
+<div id="backgroundcolor">
   <div id="featuredbox">
       <h1 id="featuredbox">Featured Artwork Showcase</h1>
   </div>
@@ -89,8 +106,8 @@
     <span class="dot" onclick="currentSlide(2)"></span>
     <span class="dot" onclick="currentSlide(3)"></span>
   </div>
-
-  <div id="csl">
+</div>
+<div id="csl">
     <div id="sltitlebox">
         <h1 id="sltitle">Commission Spotlight</h1>
     </div>
@@ -143,5 +160,16 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
 </script>
 </html>
