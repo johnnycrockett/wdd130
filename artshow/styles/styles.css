@@ -75,6 +75,10 @@ nav a {
     color: #A8577E;
 }
 
+#contactmebox {
+    margin-top: 150px;
+}
+
 #welcometitle {
     text-align: justify;
     color: #A8577E;
@@ -85,22 +89,32 @@ nav a {
     color: #A8577E;
 }
 
+#backgroundcolorsl {
+    grid-column: 3/9;
+    background-color: #DFDFDF;
+    margin-bottom: 150px;
+    padding: 0px 50px 50px 50px;
+    box-shadow: 2px 2px 4px gray;
+}
+
 #bioimage {
-    width: 30%;
+    width: 50%;
     display: block;
     margin-left: auto;
     margin-right: auto;
     border: 20px solid #c2c0c0;
     margin-bottom: 50px;
+    margin-top: 100px;
 }
 
 #philimage {
-    width: 30%;
+    width: 50%;
     display: block;
     margin-left: auto;
     margin-right: auto;
     border: 20px solid #c2c0c0;
     margin-bottom: 150px;
+    margin-top: 100px;
 }
 
 /* #olgrid {
@@ -152,7 +166,7 @@ nav a {
 
 #biotextbox {
     grid-column: 3/9;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
 }
 
 #philtextbox {
@@ -160,6 +174,10 @@ grid-column: 3/9;
 margin-bottom: 50px;
 }
 
+#csl {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
 
 .twitter {
     width: 50px;
@@ -181,17 +199,30 @@ margin-bottom: 50px;
 }
 
 #sltitle {
-    padding-top: 200px;
+    margin-top:50px;
     text-align: center;
     color: #A8577E;
 }
 
 #slimage {
-    width: 30%;
-    display: block;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     border: 20px solid #c2c0c0;
+}
+
+#sltitlebox {
+    grid-column: 4/9;
+}
+
+#slimagebox {
+    grid-column: 4/9;
+    
+}
+
+#bioimagebox {
+    grid-column: 3/9;
+    
 }
 
 main section{
@@ -223,6 +254,7 @@ footer {
     justify-content: space-around;
     align-items: center;
     text-decoration: none;
+    box-shadow: 2px 2px 2px gray;
 }
 
 #footertitle {
@@ -292,6 +324,7 @@ input[type=text], select, textarea {
     border-radius: 5px;
     padding: 16px;
     margin: 16px 0;
+    box-shadow: 2px 2px 2px gray;
   }
   
   /* Clear floats after containers */
@@ -663,7 +696,14 @@ form {
         text-align: left;
     }
 
-
+    #philimage {
+        width: 70%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: 20px solid #c2c0c0;
+        margin-bottom: 150px;
+    }
 }
 
 @media only screen and (max-width: 415px) {
@@ -733,6 +773,15 @@ form {
         margin-left: auto;
         margin-right: auto;
         border: 5px solid #c2c0c0;
+    }
+
+    #philimage {
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: 20px solid #c2c0c0;
+        margin-bottom: 150px;
     }
 
 
