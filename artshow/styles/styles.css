@@ -829,5 +829,13 @@ form {
         text-align: left;
       }
 
+      .backgroundcolor {
+        grid-column: 1/11;
+        background-color: #DFDFDF;
+        margin-bottom: 150px;
+        padding: 50px;
+        box-shadow: 2px 2px 4px gray;
+    }
+
 
 }
