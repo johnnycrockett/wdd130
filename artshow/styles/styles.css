@@ -820,7 +820,7 @@ form {
         height: 100%;
       }
 
-      #welcometext {
+      .welcometext {
         font-size: 20px;
         text-align: left;
       }
