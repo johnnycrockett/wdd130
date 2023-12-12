@@ -792,7 +792,7 @@ form {
         margin-bottom: 0px;
     }
 
-    #backgroundcolor {
+    .backgroundcolor {
         grid-column: 1/11;
         background-color: #DFDFDF;
         margin-bottom: 150px;
