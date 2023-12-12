@@ -25,6 +25,7 @@ body {
 #logotext {
     color: #DFDFDF;
     grid-column: 2/3;
+    text-decoration: none;
 }
 
 h2 {
