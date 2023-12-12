@@ -66,13 +66,13 @@ nav a {
     background-color: #c2c0c0;
 }
 
-#welcomebox {
+.welcomebox {
     padding-top: 100px;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
 }
 
-#testimonialstitle {
+.testimonialstitle {
     text-align: center;
     color: #A8577E;
 }
@@ -81,17 +81,17 @@ nav a {
     margin-top: 150px;
 }
 
-#welcometitle {
+.welcometitle {
     text-align: justify;
     color: #A8577E;
 }
 
-#welcometext {
+.welcometext {
     text-align: justify;
     color: #A8577E;
 }
 
-#note {
+.note {
     font-size: .7em;
     text-align: center;
 }
@@ -104,7 +104,7 @@ nav a {
     box-shadow: 2px 2px 4px gray;
 }
 
-#bioimage {
+.bioimage {
     width: 50%;
     display: block;
     margin-left: auto;
@@ -124,12 +124,12 @@ nav a {
     margin-top: 100px;
 }
 
-/* #olgrid {
+/* .olgrid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
  } */
  
- #olbox {
+ .olbox {
     text-align: justify;
     color: #A8577E;
     grid-column: 3/4;
@@ -140,16 +140,16 @@ nav a {
     color: #A8577E; 
 }
 
-#welcometitlebox {
+.welcometitlebox {
     grid-column: 3/9;
 }
 
-#welcometextbox {
+.welcometextbox {
     grid-column: 3/9;
     margin-bottom: 50px;
 }
 
-#backgroundcolor {
+.backgroundcolor {
     grid-column: 3/9;
     background-color: #DFDFDF;
     margin-bottom: 150px;
@@ -227,7 +227,7 @@ margin-bottom: 50px;
     
 }
 
-#bioimagebox {
+.bioimagebox {
     grid-column: 3/9;
     
 }
@@ -691,7 +691,7 @@ form {
         border: 5px solid #c2c0c0;
     }
 
-    #bioimage {
+    .bioimage {
         width: 100%;
         display: block;
         margin-left: auto;
@@ -699,7 +699,7 @@ form {
         border: 5px solid #c2c0c0;
     }
 
-    #welcometitle {
+    .welcometitle {
         text-align: left;
     }
 
@@ -772,10 +772,10 @@ form {
         margin-left: auto;
         margin-right: auto;
         border: 5px solid #c2c0c0;
-        grid-column: 0/11;
+        grid-column: 1/11;
     }
 
-    #bioimage {
+    .bioimage {
         width: 100%;
         display: block;
         margin-left: auto;
@@ -825,7 +825,7 @@ form {
         text-align: left;
       }
 
-      #olbox {
+      .olbox {
         text-align: left;
       }
 

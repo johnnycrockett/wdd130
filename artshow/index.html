@@ -23,14 +23,14 @@
       }
       </style>
 </head>
-<div class="parallax">
 <body>
+  <div class="parallax">
     <header id="nav-grid">
         <a id="logo_link" href="index.html">
             <img class="logo" src="images/Logo.png" alt="Aritisry logo">
         </a>
         <a id="logotext" href="index.html">
-          <h1 id="logotext">Aritisry</h1>
+          <h1>Aritisry</h1>
         </a>
 
         <!-- Navigation links for the page -->
@@ -49,7 +49,6 @@
     <a href="index.html">Home</a>
     <a href="commissions.html">Commissions</a>
     <a href="aboutme.html">About Me</a>
-</nav> 
   </div>
   <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -61,20 +60,20 @@
         <p id="newstext">Now taking commission requests!</p>
     </div>
 
-    <div id="welcomebox">
-      <div id="backgroundcolor">
-        <div id="welcometitlebox">
-            <h1 id="welcometitle">Welcome!</h1>
+    <div class="welcomebox">
+      <div class="backgroundcolor">
+        <div class="welcometitlebox">
+            <h1 class="welcometitle">Welcome!</h1>
         </div>
-        <div id="welcometextbox">
-            <p id="welcometext">Welcome to Artistry. My personal platform for you to commission some art! Tell me your vision, and put your trust in me to make it real. Well, atleast through some lines on your screen. I'll work with your ideas and give you a unique creation. This is your destination for artistic expression. Let's escape this world and draw ourselves into a new one!  </p>
+        <div class="welcometextbox">
+            <p class="welcometext">Welcome to Artistry. My personal platform for you to commission some art! Tell me your vision, and put your trust in me to make it real. Well, atleast through some lines on your screen. I'll work with your ideas and give you a unique creation. This is your destination for artistic expression. Let's escape this world and draw ourselves into a new one!  </p>
         </div>
       </div>
     </div>
 
 <div id="backgroundcolorforslide">
   <div id="featuredbox">
-      <h1 id="featuredbox">Featured Artwork Showcase</h1>
+      <h1>Featured Artwork Showcase</h1>
   </div>
 
     <!-- Slideshow container -->
@@ -161,46 +160,47 @@
         </a>
     </div>
 </footer>
-</body>
+</div>
 <script>
-    let slideIndex = 1;
+  let slideIndex = 1;
 showSlides(slideIndex);
 
 // Next/previous controls
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+showSlides(slideIndex += n);
 }
 
 // Thumbnail image controls
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+let i;
+let slides = document.getElementsByClassName("mySlides");
+let dots = document.getElementsByClassName("dot");
+if (n > slides.length) {slideIndex = 1}
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+  slides[i].style.display = "none";
+}
+for (i = 0; i < dots.length; i++) {
+  dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
 }
 
 /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
 function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
+var x = document.getElementById("myLinks");
+if (x.style.display === "block") {
+  x.style.display = "none";
+} else {
+  x.style.display = "block";
+}
 }
 
 </script>
+</body>
 </html>

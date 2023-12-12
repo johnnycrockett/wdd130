@@ -23,14 +23,14 @@
       }
       </style>
 </head>
-<div class="parallax">
 <body>
+  <div class="parallax">
     <header id="nav-grid">
         <a id="logo_link" href="index.html">
             <img class="logo" src="images/Logo.png" alt="Aritisry logo">
         </a>
         <a id="logotext" href="index.html">
-        <h1 id="logotext">Aritisry</h1>
+        <h1>Aritisry</h1>
         </a>
 
         <!-- Navigation links for the page -->
@@ -50,7 +50,6 @@
       <a href="index.html">Home</a>
       <a href="commissions.html">Commissions</a>
       <a href="aboutme.html">About Me</a>
-  </nav> 
     </div>
     <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -59,12 +58,12 @@
   </div>
 
     <div id="artbiobox">
-      <div id="backgroundcolor">
-        <div id="welcometitlebox">
-            <h1 id="welcometitle">Artist Biography</h1>
+      <div class="backgroundcolor">
+        <div class="welcometitlebox">
+            <h1 class="welcometitle">Artist Biography</h1>
         </div>
         <div id="biotextbox">
-            <p id="welcometext">My name is Arianna. But I’ll always go by Ari. I am a self taught artist. I first started drawing when I was old enough to hold a pencil. From drawing on the sides on my homework, to sketching coloring pages for friends. At the age of 12 was when I really wanted to take art more seriously. My love for characters in stories and games made me want to become apart of their world, and art gave me the ability to transport myself into these fictional universes. Some of my favorites being being the open-world action RPG, Genshin Impact and the Japanese animated series, Jojo's Bizarre Adventure. As well as some self created worlds from my imagination. 
+            <p class="welcometext">My name is Arianna. But I’ll always go by Ari. I am a self taught artist. I first started drawing when I was old enough to hold a pencil. From drawing on the sides on my homework, to sketching coloring pages for friends. At the age of 12 was when I really wanted to take art more seriously. My love for characters in stories and games made me want to become apart of their world, and art gave me the ability to transport myself into these fictional universes. Some of my favorites being being the open-world action RPG, Genshin Impact and the Japanese animated series, Jojo's Bizarre Adventure. As well as some self created worlds from my imagination. 
 
               The whole idea behind creating my art is that I remain faithful to my own self. 
               
@@ -74,18 +73,18 @@
               
               </p>
         </div>
-        <div id="bioimagebox">
-          <img id="bioimage" src="images/Biography.jpg" alt="Biography Picture">
+        <div class="bioimagebox">
+          <img class="bioimage" src="images/Biography.jpg" alt="Biography Picture">
       </div>
     </div>
   </div>
-  <div id="welcomebox">
-    <div id="backgroundcolor">
-    <div id="welcometitlebox">
-        <h1 id="welcometitle">Artistic Philosophy and Process</h1>
+  <div class="welcomebox">
+    <div class="backgroundcolor">
+    <div class="welcometitlebox">
+        <h1 class="welcometitle">Artistic Philosophy and Process</h1>
     </div>
     <div id="philtextbox">
-        <p id="welcometext">The goal of my artwork it to submerge myself and others into their favorite fictional worlds. Helping them visually picture themselves with their favorite characters. In this life, we’ll never be able to truly have a connection with them. We’re real and they’re not. But, if I can help them see that through drawings, then I will. Escaping reality is what we want to achieve. 
+        <p class="welcometext">The goal of my artwork it to submerge myself and others into their favorite fictional worlds. Helping them visually picture themselves with their favorite characters. In this life, we’ll never be able to truly have a connection with them. We’re real and they’re not. But, if I can help them see that through drawings, then I will. Escaping reality is what we want to achieve. 
 
 
 
@@ -99,7 +98,7 @@
           
           When inspiration strikes, I’ll usually always jot down the details immediately. I’ll drop whatever I’m doing currently so I won’t forget the idea. Sure, this can get me into some trouble with other daily responsibilities, but I believe that art is so valuable and beautiful. It should always deserve all the time in the world! The drawing idea will almost always be sketched out into my brain, and that’s when I strike. </p>
     </div>
-    <div id="bioimagebox">
+    <div class="bioimagebox">
       <img id="philimage" src="images/AkeAri.jpg" alt="Sketch Art">
   </div>
   </div>
@@ -107,7 +106,7 @@
 
     <div class="container">
         <div id="testimonialsbox">
-            <h1 id="testimonialstitle">Contact Me!</h1>
+            <h1 class="testimonialstitle">Contact Me!</h1>
         </div>
         <form class="commissionsform" action="https://formsubmit.co/ariannaaphelps@gmail.com" method="POST">
       
@@ -119,9 +118,8 @@
       
           <label for="email">Email</label>
           <input type="text" id="email" name="email" placeholder="Your email...">
-          </select>
       
-          <label for="Descriptiont">Query</label>
+          <label for="Description">Query</label>
           <textarea id="Description" name="Description" placeholder="Write something..." style="height:200px"></textarea>
       
           <button type="submit">Send your message</button>
@@ -143,7 +141,7 @@
         </a>
     </div>
 </footer>
-</body>
+</div>
 <script>
   let slideIndex = 1;
 showSlides(slideIndex);
@@ -185,4 +183,5 @@ if (x.style.display === "block") {
 }
 
 </script>
+</body>
 </html> 
